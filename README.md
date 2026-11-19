@@ -2,7 +2,7 @@
 
 > **"घरच्या चवीसाठी, वेळेची बचत!"**  
 > *Fresh • Clean • Chopped Vegetables | Nahre Ambegaon, Pune*  
-> **WhatsApp / Phone:** `+91 9156872582`
+> **WhatsApp / Phone:** `+91 8669289173`
 
 A modern, fast, responsive web application for **Sugran Katta (सुगरण कट्टा)**, built to digitize and scale their chopped and uncut fresh vegetable delivery business in South Pune (Narhe, Ambegaon, Dhayari, Katraj, Sinhagad Road, etc.).
 
@@ -26,7 +26,7 @@ A modern, fast, responsive web application for **Sugran Katta (सुगरण �
 
 4. **1-Click Automated WhatsApp Checkout**:
    - Customers choose vegetables, packet counts, chopping preference (*बारीक / मध्यम*), and delivery slots.
-   - Generates a formatted Marathi/English WhatsApp invoice and sends it directly to `+91 9156872582`.
+   - Generates a formatted Marathi/English WhatsApp invoice and sends it directly to `+91 8669289173`.
    - Celebratory confetti on order dispatch.
 
 5. **"वेळेची बचत" Time & Garbage Savings Calculator**:

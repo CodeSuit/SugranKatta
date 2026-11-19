@@ -1,7 +1,7 @@
 // ==========================================
 // SUGARAN KATTA (सुगरण कट्टा) - CORE APP ENGINE
 // Fresh • Clean • Chopped Vegetables | Pune
-// WhatsApp: +91 9156872582 | Narhe Ambegaon, Pune
+// WhatsApp: +91 8669289173 | Narhe Ambegaon, Pune
 // ==========================================
 
 const WHATSAPP_NUMBER = "918669289173";
