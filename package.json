@@ -1,0 +1,21 @@
+{
+  "name": "sugran-katta",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sugran Katta (सुगरण कट्टा) - Fresh, Clean & Chopped Vegetables in Pune. Order via WhatsApp.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "sugran-katta",
+    "chopped-vegetables",
+    "pune",
+    "fresh-produce",
+    "narhe",
+    "ambegaon"
+  ],
+  "author": "Sugran Katta",
+  "license": "MIT"
+}

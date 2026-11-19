@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सुगरण कट्टा (Sugran Katta) - Fresh, Clean & Chopped Vegetables | Narhe Ambegaon Pune</title>
+  <meta name="description" content="सुगरण कट्टा (Sugran Katta) - घरच्या चवीसाठी, वेळेची बचत! Fresh, clean & chopped vegetables in 200g hygienic packets. Narhe, Ambegaon, Pune. WhatsApp: 9156872582">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            wood: {
+              plank: '#d97706',
+              deep: '#78350f',
+              cream: '#fffbeb',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
+            display: ['"Outfit"', '"Noto Sans Devanagari"', 'sans-serif'],
+            marathi: ['"Noto Sans Devanagari"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#fcfaf7] text-stone-800 antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-24 right-5 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"></div>
+
+  <!-- 1. TOP ANNOUNCEMENT BANNER -->
+  <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-green-900 text-emerald-100 text-xs py-2 px-3 border-b border-emerald-700/50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 tracking-wide font-medium">
+        <span class="inline-block animate-bounce">💡</span>
+        <span>
+          <strong class="text-amber-300 font-bold">TIP (महत्त्वाची सूचना):</strong> 
+          ऑर्डर एक दिवस आधी करावी, जेणेकरून सकाळी ताजी भाजी शेतातून निवडून स्वच्छ करून मिळेल!
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-[11px]">
+        <!-- Location -->
+        <div class="flex items-center gap-1 text-emerald-200">
+          <span>📍</span>
+          <span class="font-semibold">Narhe Ambegaon, Pune</span>
+        </div>
+        <span class="text-emerald-700 hidden sm:inline">|</span>
+
+        <!-- WhatsApp Quick Hotline -->
+        <a href="https://wa.me/918669289173" target="_blank" class="flex items-center gap-1.5 bg-emerald-700/80 hover:bg-emerald-600 px-2.5 py-0.5 rounded-full text-white font-bold transition">
+          <span>💬</span>
+          <span>9156872582</span>
+        </a>
+
+        <!-- Language Switcher Pill -->
+        <div class="flex items-center bg-emerald-950/70 p-0.5 rounded-lg border border-emerald-700/60">
+          <button data-lang="mr" class="lang-btn px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-600 text-white transition">मराठी</button>
+          <button data-lang="en" class="lang-btn px-2 py-0.5 text-[10px] font-bold rounded text-emerald-300 hover:text-white transition">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. STICKY HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-stone-200/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo in Wooden Sign Style -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="wood-board px-3.5 py-1.5 rounded-xl flex items-center gap-2 transform group-hover:scale-105 transition-transform duration-300">
+          <div class="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-black text-xl shadow-inner">
+            🌿
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1">
+              <span class="font-display font-black text-xl sm:text-2xl text-stone-900 tracking-tight">Sugran</span>
+              <span class="font-display font-black text-xl sm:text-2xl text-emerald-700 italic">Katta</span>
+            </div>
+            <div class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-amber-900 -mt-1">
+              Fresh • Clean • Chopped
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block border-l border-stone-300 pl-3">
+          <span class="text-xs font-bold text-stone-700 block">सुगरण कट्टा</span>
+          <span class="text-[10px] text-stone-500 block">घरच्या चवीसाठी, वेळेची बचत</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-bold text-stone-700">
+        <a href="#catalog" class="hover:text-emerald-700 transition flex items-center gap-1">
+          <span>🥦</span>
+          <span data-lang-mr>सर्व भाज्या</span>
+          <span data-lang-en style="display:none;">All Vegetables</span>
+        </a>
+        <a href="#why-sugran" class="hover:text-emerald-700 transition flex items-center gap-1">
+          <span>✨</span>
+          <span data-lang-mr>आमची पद्धत</span>
+          <span data-lang-en style="display:none;">Our Process</span>
+        </a>
+        <a href="#time-calculator" class="hover:text-emerald-700 transition flex items-center gap-1">
+          <span>⏱️</span>
+          <span data-lang-mr>वेळेची बचत कॅल्क्युलेटर</span>
+          <span data-lang-en style="display:none;">Time Calculator</span>
+        </a>
+        <a href="#delivery-areas" class="hover:text-emerald-700 transition flex items-center gap-1">
+          <span>📍</span>
+          <span data-lang-mr>सेवा क्षेत्र (Pune)</span>
+          <span data-lang-en style="display:none;">Delivery Areas</span>
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- View Original Flyer Modal Button -->
+        <button 
+          id="view-original-flyer-btn" 
+          class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300/80 rounded-xl text-xs font-bold transition shadow-sm"
+          title="मूळ पत्रक पहा (Original Flyer)"
+        >
+          <span>📜</span>
+          <span data-lang-mr>मूळ पत्रक</span>
+          <span data-lang-en style="display:none;">Original Flyer</span>
+        </button>
+
+        <!-- Cart Drawer Trigger Button -->
+        <button 
+          id="cart-drawer-trigger" 
+          class="relative flex items-center gap-2 px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white rounded-xl text-xs font-extrabold transition shadow-md hover:shadow-lg"
+        >
+          <span class="text-base">🧺</span>
+          <span class="hidden sm:inline" data-lang-mr>माझी पिशवी</span>
+          <span class="hidden sm:inline" data-lang-en style="display:none;">My Basket</span>
+          <span class="cart-total-badge font-mono font-bold bg-emerald-800/80 px-2 py-0.5 rounded-lg text-[11px]">₹0</span>
+          
+          <!-- Badge Count -->
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 w-5 h-5 bg-amber-500 text-stone-900 font-black text-[10px] rounded-full flex items-center justify-center border-2 border-white shadow">
+            0
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION -->
+  <section class="relative bg-gradient-to-b from-[#f3f9f2] via-[#faf6ee] to-[#fcfaf7] pt-8 pb-14 border-b border-stone-200/60 overflow-hidden">
+    <!-- Decorative Floating Leaves background -->
+    <div class="absolute -top-10 -left-10 w-64 h-64 bg-emerald-200/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-20 right-0 w-80 h-80 bg-amber-200/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Column: Copy & Taglines from Flyer -->
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          
+          <!-- Top pill -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100/80 border border-emerald-300/80 rounded-full text-xs font-extrabold text-emerald-900 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
+            <span data-lang-mr>ताज्या भाज्यांचा विश्वास...</span>
+            <span data-lang-en style="display:none;">Trust in Fresh Produce...</span>
+            <span class="text-emerald-700">•</span>
+            <span class="text-amber-800" data-lang-mr>स्वच्छ भाज्या सुरक्षित आरोग्य 💚</span>
+            <span class="text-amber-800" data-lang-en style="display:none;">Clean Veggies Safe Health 💚</span>
+          </div>
+
+          <!-- Main Slogan -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-stone-900 leading-[1.15] tracking-tight">
+            <span class="block text-emerald-800" data-lang-mr>घरच्या चवीसाठी,</span>
+            <span class="block text-emerald-800" data-lang-en style="display:none;">Authentic Home Taste,</span>
+            <span class="relative inline-block text-stone-900">
+              <span data-lang-mr>वेळेची बचत १००%!</span>
+              <span data-lang-en style="display:none;">100% Time Saved!</span>
+              <svg class="absolute -bottom-2 left-0 w-full h-3 text-amber-500 fill-current opacity-70" viewBox="0 0 100 20" preserveAspectRatio="none">
+                <path d="M0 10 Q 50 20, 100 10 Q 50 0, 0 10 Z"></path>
+              </svg>
+            </span>
+          </h1>
+
+          <!-- Subtitle / Intro -->
+          <p class="text-sm sm:text-base text-stone-600 max-w-2xl leading-relaxed">
+            <span data-lang-mr>
+              स्वच्छ निवडलेली, ओझोन पाण्याने धुतलेली आणि <strong>२०० ग्रॅमच्या सीलबंद पॅकेटमध्ये</strong> तयार कट केलेली भाजी! आता कांदा कापताना रडणे आणि पालक निवडण्याचा तासभराचा वैताग कायमचा बंद.
+            </span>
+            <span data-lang-en style="display:none;">
+              Freshly sorted, washed and hygienically chopped vegetables in <strong>200g sealed punnets</strong>. Ready to cook right out of the box with zero prep time and zero wastage!
+            </span>
+          </p>
+
+          <!-- Core Flyer Badges (6 Badges from flyer) -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-2">
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">🌿</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>Fresh Produce</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">Fresh Daily</span>
+                <span class="text-[10px] text-stone-500 block">Every Day</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">✨</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>स्वच्छ धुणे व कापले</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">Washed & Cut</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-mr>हायजेनिक स्वच्छता</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-en style="display:none;">100% Hygienic</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">⏱️</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>वेळेची बचत १००%</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">100% Time Saved</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-mr>थेट कढईत टाका</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-en style="display:none;">Ready to Cook</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">💚</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>सहज सोयीस</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">Maximum Ease</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-mr>किचकट कामे बंद</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-en style="display:none;">Zero kitchen mess</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">🛡️</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>गुणवत्तेची हमी</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">Quality Assured</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-mr>निवडून घेतलेल्या</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-en style="display:none;">Hand-sorted</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 bg-white border border-emerald-200/70 rounded-xl shadow-xs flex items-center gap-2">
+              <span class="text-lg">📦</span>
+              <div class="text-left">
+                <span class="text-xs font-bold text-stone-900 block" data-lang-mr>200gm पॅकेट</span>
+                <span class="text-xs font-bold text-stone-900 block" data-lang-en style="display:none;">200g Pockets</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-mr>प्रत्येक पॅकेट उपलब्ध</span>
+                <span class="text-[10px] text-stone-500 block" data-lang-en style="display:none;">Standard Punnet</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center gap-3 pt-3 justify-center lg:justify-start">
+            <a 
+              href="#catalog" 
+              class="w-full sm:w-auto px-7 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-sm transform hover:-translate-y-0.5"
+            >
+              <span>🥦</span>
+              <span data-lang-mr>ताज्या भाज्यांची ऑर्डर करा</span>
+              <span data-lang-en style="display:none;">Browse Fresh Vegetables</span>
+              <span>→</span>
+            </a>
+
+            <a 
+              href="https://wa.me/918669289173?text=नमस्कार%2C%20मला%20सुगरण%20कट्टावरून%20भाज्यांची%20ऑर्डर%20करायची%20आहे." 
+              target="_blank"
+              class="w-full sm:w-auto px-6 py-3.5 bg-white hover:bg-emerald-50 text-emerald-800 border-2 border-emerald-600 rounded-2xl font-bold transition flex items-center justify-center gap-2 text-sm shadow-sm"
+            >
+              <span>💬</span>
+              <span>WhatsApp: 9156872582</span>
+            </a>
+          </div>
+
+          <!-- Cut & Uncut Note from Flyer -->
+          <div class="p-3 bg-amber-50/90 border border-amber-300/80 rounded-xl text-xs text-amber-950 flex items-center justify-center lg:justify-start gap-2">
+            <span class="text-amber-600 font-black">🌱</span>
+            <span class="font-bold" data-lang-mr>कट केलेल्या व न कट केलेल्या दोन्ही भाज्या उपलब्ध!</span>
+            <span class="font-bold" data-lang-en style="display:none;">Both Cut & Chopped as well as Uncut Whole vegetables available!</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <!-- Main Card Showcase -->
+          <div class="relative mx-auto max-w-md">
+            
+            <!-- Background Glow -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-emerald-500 to-amber-500 rounded-3xl blur-xl opacity-20"></div>
+
+            <div class="relative bg-white rounded-3xl p-5 shadow-2xl border border-stone-200">
+              
+              <!-- Original Flyer Preview Banner -->
+              <div class="relative rounded-2xl overflow-hidden mb-4 border border-stone-200 shadow-inner group">
+                <img 
+                  src="sugran-katta-flyer.jpg" 
+                  alt="Sugran Katta Official Flyer" 
+                  class="w-full h-72 object-cover object-top group-hover:scale-105 transition duration-700 cursor-pointer"
+                  onclick="document.getElementById('flyer-modal').classList.remove('hidden')"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-600 px-2 py-0.5 rounded">मूळ माहिती पत्रक</span>
+                      <h4 class="font-bold text-sm text-white mt-1">सुगरण कट्टा (Sugran Katta)</h4>
+                      <p class="text-[11px] text-stone-200">नऱ्हे-आंबेगाव, पुणे • ९१५६८७२५८२</p>
+                    </div>
+                    <button 
+                      onclick="document.getElementById('flyer-modal').classList.remove('hidden')"
+                      class="px-2.5 py-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg text-xs font-bold transition flex items-center gap-1"
+                    >
+                      <span>🔍 झूम</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Highlights Grid below flyer -->
+              <div class="grid grid-cols-2 gap-2 text-center text-xs">
+                <div class="p-2.5 bg-emerald-50 rounded-xl border border-emerald-100">
+                  <span class="block text-emerald-800 font-extrabold text-sm">२०० ग्रॅम</span>
+                  <span class="text-[10px] text-emerald-700">पारदर्शक स्वच्छ पॅक</span>
+                </div>
+                <div class="p-2.5 bg-amber-50 rounded-xl border border-amber-100">
+                  <span class="block text-amber-800 font-extrabold text-sm">रासायनिक मुक्त</span>
+                  <span class="text-[10px] text-amber-700">ओझोन पाण्याने धुतलेल्या</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PRODUCT CATALOG SECTION -->
+  <section id="catalog" class="py-14 max-w-7xl mx-auto px-4 sm:px-6">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold mb-2">
+        <span>🥦</span>
+        <span data-lang-mr>आमची ताजी उत्पादने</span>
+        <span data-lang-en style="display:none;">Our Fresh Range</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-black text-stone-900 tracking-tight">
+        <span data-lang-mr>भाज्यांची संपूर्ण यादी व ऑनलाइन ऑर्डर</span>
+        <span data-lang-en style="display:none;">Vegetable Catalog & Order</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-stone-600 mt-2">
+        <span data-lang-mr>कट केलेल्या किंवा अख्ख्या भाज्या निवडा आणि १-क्लिकवर व्हॉट्सॲपवर ऑर्डर पाठवा!</span>
+        <span data-lang-en style="display:none;">Choose chopped or whole vegetables and order instantly via WhatsApp!</span>
+      </p>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-200/80 mb-8 space-y-4">
+      
+      <!-- Search Input Bar -->
+      <div class="relative">
+        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
+          🔍
+        </span>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="भाजीचे नाव शोधा (उदा. कांदा, पालक, भेंडी, टोमॅटो, बीन्स, गाजर, मिसर भाजी...)"
+          class="w-full pl-10 pr-4 py-3 bg-stone-50 border border-stone-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:border-emerald-600 focus:bg-white transition"
+        />
+      </div>
+
+      <!-- Category Tabs (from Flyer Sections) -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 text-xs font-bold scrollbar-none">
+        <button 
+          data-category="all" 
+          class="cat-btn px-4 py-2.5 rounded-xl bg-emerald-600 text-white shadow-md whitespace-nowrap transition"
+        >
+          <span data-lang-mr>सर्व भाज्या (All)</span>
+          <span data-lang-en style="display:none;">All Produce</span>
+        </button>
+
+        <button 
+          data-category="cut" 
+          class="cat-btn px-4 py-2.5 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200 whitespace-nowrap transition flex items-center gap-1.5"
+        >
+          <span>🔪</span>
+          <span data-lang-mr>कट केलेल्या भाज्या (200g)</span>
+          <span data-lang-en style="display:none;">Chopped (200g)</span>
+        </button>
+
+        <button 
+          data-category="uncut" 
+          class="cat-btn px-4 py-2.5 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200 whitespace-nowrap transition flex items-center gap-1.5"
+        >
+          <span>🧺</span>
+          <span data-lang-mr>न कट केलेल्या भाज्या (Whole)</span>
+          <span data-lang-en style="display:none;">Uncut Whole</span>
+        </button>
+
+        <button 
+          data-category="leafy" 
+          class="cat-btn px-4 py-2.5 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200 whitespace-nowrap transition flex items-center gap-1.5"
+        >
+          <span>🌿</span>
+          <span data-lang-mr>पालेभाज्या (Leafy Greens)</span>
+          <span data-lang-en style="display:none;">Leafy Greens</span>
+        </button>
+
+        <button 
+          data-category="combo" 
+          class="cat-btn px-4 py-2.5 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200 whitespace-nowrap transition flex items-center gap-1.5"
+        >
+          <span>🥗</span>
+          <span data-lang-mr>कॉम्बो व सॅलड (Combos)</span>
+          <span data-lang-en style="display:none;">Combos & Salad</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Dynamic Products Grid (Rendered by app.js) -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!-- Loading skeleton -->
+      <div class="h-64 bg-stone-200 rounded-2xl animate-pulse"></div>
+      <div class="h-64 bg-stone-200 rounded-2xl animate-pulse"></div>
+      <div class="h-64 bg-stone-200 rounded-2xl animate-pulse"></div>
+      <div class="h-64 bg-stone-200 rounded-2xl animate-pulse"></div>
+    </div>
+
+  </section>
+
+  <!-- 5. WHY SUGARAN KATTA & PROCESS SECTION -->
+  <section id="why-sugran" class="py-14 bg-gradient-to-b from-[#faf6ee] to-[#f5f0e4] border-y border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-black tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-1 rounded-full">
+          स्वच्छता आणि सुरक्षितता
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-stone-900 mt-2">
+          <span data-lang-mr>सुगरण कट्टा का निवडावे?</span>
+          <span data-lang-en style="display:none;">Why Choose Sugran Katta?</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-600 mt-1">
+          <span data-lang-mr>आमच्या प्रत्येक पॅकेटमध्ये असते शेतातून थेट आलेला ताजेपणा आणि घरगुती आईच्या हातची स्वच्छता!</span>
+          <span data-lang-en style="display:none;">Farm fresh produce cleaned and processed with pure motherly hygiene!</span>
+        </p>
+      </div>
+
+      <!-- 4 Step Process Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm relative group hover:border-emerald-500 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl font-black mb-4">
+            🌾
+          </div>
+          <span class="text-xs font-black text-emerald-700 uppercase tracking-wider block mb-1">पायरी १</span>
+          <h3 class="font-extrabold text-stone-900 text-base mb-2">पहाटे थेट शेतातून संकलन</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            पहाटे ५:०० वाजता स्थानिक शेतकऱ्यांकडून निवडक, रसायनमुक्त आणि टवटवीत भाज्या खरेदी केल्या जातात.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm relative group hover:border-emerald-500 transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-2xl font-black mb-4">
+            💧
+          </div>
+          <span class="text-xs font-black text-blue-700 uppercase tracking-wider block mb-1">पायरी २</span>
+          <h3 class="font-extrabold text-stone-900 text-base mb-2">३-स्तरीय ओझोन वॉश</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            माती, किटकनाशकांचे अंश आणि धूळ पूर्णपणे निघून जाण्यासाठी भाज्या शुद्ध पाण्याने व ओझोन तंत्रज्ञानाने स्वच्छ धुतल्या जातात.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm relative group hover:border-emerald-500 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl font-black mb-4">
+            🔪
+          </div>
+          <span class="text-xs font-black text-amber-700 uppercase tracking-wider block mb-1">पायरी ३</span>
+          <h3 class="font-extrabold text-stone-900 text-base mb-2">सॅनिटाइज्ड कटिंग</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            फूड-ग्रेड स्टेनलेस स्टील ब्लेड्स वापरून ग्लोव्हज परिधान केलेल्या कुशल कारागिरांकडून एकसमान आकारात कापणी केली जाते.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm relative group hover:border-emerald-500 transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center text-2xl font-black mb-4">
+            📦
+          </div>
+          <span class="text-xs font-black text-purple-700 uppercase tracking-wider block mb-1">पायरी ४</span>
+          <h3 class="font-extrabold text-stone-900 text-base mb-2">200g सीलबंद पॅक व घरपोच</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            २०० ग्रॅमच्या हायजेनिक कंटेनर्समध्ये ताजेपणा लॉक करून सकाळी ७:०० वाजता थेट तुमच्या स्वयंपाकघरापर्यंत पोहोचवले जाते!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. TIME SAVINGS CALCULATOR (वेळेची बचत १००%) -->
+  <section id="time-calculator" class="py-14 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+      
+      <!-- Decorative circle -->
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-emerald-600/20 rounded-full blur-2xl"></div>
+
+      <div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        
+        <!-- Controls Column -->
+        <div class="md:col-span-7 space-y-6">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-300 bg-emerald-800/60 px-3 py-1 rounded-full">
+              ⏱️ वेळेची बचत १००%
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-black mt-2">
+              <span data-lang-mr>तुम्ही दररोज किती वेळ वाचवू शकता?</span>
+              <span data-lang-en style="display:none;">Calculate Your Kitchen Time Saved</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-emerald-200 mt-1">
+              भाजी निवडणे, सोलणे, धुणे आणि डोळ्यात पाणी काढत कांदा चिरणे या किचकट कामात तुमचा किती वेळ वाया जातो ते तपासा:
+            </p>
+          </div>
+
+          <!-- Slider 1: Family members -->
+          <div class="space-y-2">
+            <div class="flex justify-between text-xs font-bold">
+              <span>घरात किती व्यक्ती आहेत? (Family Members):</span>
+              <span id="family-count-label" class="text-amber-300 font-mono text-base">4</span>
+            </div>
+            <input 
+              type="range" 
+              id="slider-family" 
+              min="2" 
+              max="8" 
+              value="4" 
+              class="w-full h-2 bg-emerald-700 rounded-lg cursor-pointer accent-amber-400"
+            />
+            <div class="flex justify-between text-[10px] text-emerald-300">
+              <span>२ व्यक्ती</span>
+              <span>४ व्यक्ती</span>
+              <span>८ व्यक्ती</span>
+            </div>
+          </div>
+
+          <!-- Slider 2: Cooking frequency -->
+          <div class="space-y-2">
+            <div class="flex justify-between text-xs font-bold">
+              <span>दररोज किती वेळा स्वयंपाक होतो? (Meals/Day):</span>
+              <span id="cooking-times-label" class="text-amber-300 font-mono text-base">2</span>
+            </div>
+            <input 
+              type="range" 
+              id="slider-cooking" 
+              min="1" 
+              max="3" 
+              value="2" 
+              class="w-full h-2 bg-emerald-700 rounded-lg cursor-pointer accent-amber-400"
+            />
+            <div class="flex justify-between text-[10px] text-emerald-300">
+              <span>१ वेळा (दुपार किंवा रात्र)</span>
+              <span>२ वेळा (दोन वेळ)</span>
+              <span>३ वेळा (नाश्ता + २ जेवण)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Box Column -->
+        <div class="md:col-span-5 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 text-center space-y-4">
+          <div class="text-xs uppercase font-extrabold text-amber-300 tracking-wider">
+            सुगरण कट्टामुळे होणारी बचत:
+          </div>
+
+          <div class="bg-black/20 p-4 rounded-xl border border-white/10">
+            <span class="text-xs text-emerald-200 block">दर आठवड्याला वाचणारा वेळ:</span>
+            <span id="calc-weekly-hours" class="text-3xl sm:text-4xl font-black text-amber-300 block my-1">
+              6.5 तास / आठवडा
+            </span>
+            <span class="text-[11px] text-emerald-300">
+              (एका सुट्टीच्या दिवसा इतका वेळ!)
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2.5 bg-black/15 rounded-lg">
+              <span class="text-[10px] text-emerald-200 block">वार्षिक वेळ बचत:</span>
+              <span id="calc-yearly-days" class="font-bold text-white block text-sm">~340 तास</span>
+            </div>
+            <div class="p-2.5 bg-black/15 rounded-lg">
+              <span class="text-[10px] text-emerald-200 block">कचऱ्याची बचत:</span>
+              <span id="calc-waste-saved" class="font-bold text-white block text-sm">~7 किलो / आठवडा</span>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-emerald-200 italic leading-snug">
+            "हा वाचलेला वेळ आपल्या मुलांसोबत, छंदासाठी किंवा स्वतःच्या विश्रांतीसाठी वापरा!"
+          </p>
+
+          <a 
+            href="#catalog" 
+            class="block w-full py-2.5 bg-amber-400 hover:bg-amber-300 text-stone-900 font-extrabold rounded-xl text-xs transition shadow-md"
+          >
+            आताच भाज्या मागवून वेळ वाचवा ➔
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. DELIVERY AREAS (पुण्यातील सेवा क्षेत्र) -->
+  <section id="delivery-areas" class="py-14 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-black tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-1 rounded-full">
+          पुणे शहर सेवा क्षेत्र
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-stone-900 mt-2">
+          <span data-lang-mr>आम्ही कुठे डिलिव्हरी करतो?</span>
+          <span data-lang-en style="display:none;">Where We Deliver in Pune</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-600 mt-1">
+          नऱ्हे, आंबेगाव, धायरी, सिंहगड रोड आणि परिसरातील सर्व सोसायट्यांमध्ये सकाळी घरपोच सेवा!
+        </p>
+      </div>
+
+      <!-- Quick Delivery Checker Bar -->
+      <div class="max-w-xl mx-auto mb-8 bg-stone-50 p-4 rounded-2xl border border-stone-200 space-y-3">
+        <label class="block text-xs font-bold text-stone-700">आपल्या भागातील डिलिव्हरी तपासा:</label>
+        <select id="check-locality-select" class="w-full px-3 py-2.5 bg-white border border-stone-300 rounded-xl text-xs font-medium focus:outline-none focus:border-emerald-600">
+          <option value="">-- आपला परिसर निवडा (Select Area) --</option>
+          <option value="Narhe (नऱ्हे)">Narhe (नऱ्हे - मुख्य केंद्र)</option>
+          <option value="Ambegaon Budruk (आंबेगाव बु.)">Ambegaon Budruk (आंबेगाव बु.)</option>
+          <option value="Ambegaon Khurd (आंबेगाव खु.)">Ambegaon Khurd (आंबेगाव खु.)</option>
+          <option value="Dhayari (धायरी)">Dhayari (धायरी)</option>
+          <option value="Vadgaon Budruk (वडगाव बु.)">Vadgaon Budruk (वडगाव बु.)</option>
+          <option value="Katraj / Bharati Vidyapeeth (कात्रज)">Katraj / Bharati Vidyapeeth (कात्रज)</option>
+          <option value="Sinhagad Road / Anand Nagar (सिंहगड रोड)">Sinhagad Road / Anand Nagar (सिंहगड रोड)</option>
+          <option value="Warje (वारजे)">Warje (वारजे)</option>
+          <option value="Manik Baug / Hingne (माणिक बाग)">Manik Baug / Hingne (माणिक बाग)</option>
+        </select>
+        <div id="locality-check-result"></div>
+      </div>
+
+      <!-- Localities Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">नऱ्हे (Narhe)</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹149+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">आंबेगाव बु. व खु.</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹149+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">धायरी (Dhayari)</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹199+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">वडगाव बु. (Vadgaon)</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹199+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">कात्रज / भारती विद्यापीठ</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹199+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">सिंहगड रोड / आनंद नगर</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹249+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">वारजे (Warje)</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹299+)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 hover:bg-emerald-50/50 border border-stone-200 rounded-xl transition flex items-center gap-3">
+          <span class="text-emerald-700 text-lg">📍</span>
+          <div>
+            <h4 class="font-bold text-xs text-stone-900">माणिक बाग / हिंगणे</h4>
+            <span class="text-[10px] text-emerald-700 font-semibold block">मोफत डिलिव्हरी (₹249+)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. TESTIMONIALS / CUSTOMER FEEDBACK -->
+  <section class="py-14 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-black tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-1 rounded-full">
+          पुणेकरांचे अनुभव
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-stone-900 mt-2">
+          आमच्या समाधानी ग्राहकांचे मत
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+            <p class="text-xs text-stone-600 italic leading-relaxed mb-4">
+              "मी Hinjewadi आयटी पार्कमध्ये जॉब करते. सकाळी मुलांचा डबा आणि स्वतःचा लंच बॉक्स करताना चिरलेला कांदा, टोमॅटो आणि पालक मिळणे म्हणजे माझ्यासाठी वरदान ठरले आहे. भाजी अतिशय ताजी असते!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+            <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-xs">
+              AK
+            </div>
+            <div>
+              <span class="text-xs font-bold text-stone-900 block">अंजली कुलकर्णी</span>
+              <span class="text-[10px] text-stone-500 block">नऱ्हे, पुणे (IT Professional)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+            <p class="text-xs text-stone-600 italic leading-relaxed mb-4">
+              "सुगरण कट्टाची मिसर भाजी आणि पालक निवडण्याची पद्धत एकदम स्वच्छ आहे. एकही किडका किंवा पिवळा पान नसतो. २०० ग्रॅमचे पॅकेट असल्याने एका वेळच्या भाजीसाठी बरोबर पुरते."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-xs">
+              SP
+            </div>
+            <div>
+              <span class="text-xs font-bold text-stone-900 block">शुभदा पाटील</span>
+              <span class="text-[10px] text-stone-500 block">आंबेगाव बु., पुणे (गृहिणी)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-2">★★★★★</div>
+            <p class="text-xs text-stone-600 italic leading-relaxed mb-4">
+              "व्हॉट्सॲपवर आदल्या दिवशी ऑर्डर टाकली की दुसऱ्या दिवशी सकाळी वेळेत डिलिव्हरी होते. पॅकिंग मजबूत आहे. स्वयंपाकघरात कचरा होणे पूर्णपणे थांबले आहे. सर्वांनी नक्की ट्राय करावे!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+            <div class="w-9 h-9 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center text-xs">
+              MS
+            </div>
+            <div>
+              <span class="text-xs font-bold text-stone-900 block">महेश शिंदे</span>
+              <span class="text-[10px] text-stone-500 block">धायरी, पुणे</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. FAQ SECTION -->
+  <section class="py-14 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl sm:text-3xl font-black text-stone-900">नेहमी विचारले जाणारे प्रश्न (FAQ)</h2>
+    </div>
+
+    <div class="space-y-3">
+      <details class="bg-white p-4 rounded-xl border border-stone-200 cursor-pointer group">
+        <summary class="font-bold text-xs sm:text-sm text-stone-800 flex justify-between items-center">
+          <span>ऑर्डर एक दिवस आधी का करावी लागते?</span>
+          <span class="text-emerald-600 group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+          आम्ही शिळ्या भाज्या कट करून ठेवत नाही! तुम्ही आदल्या दिवशी दिलेल्या ऑर्डर्सनुसार पहाटे थेट शेतकऱ्यांकडून ताज्या भाज्या आणून त्याच दिवशी सकाळी स्वच्छ धुऊन, कट करून तुम्हाला ताज्या दिल्या जातात.
+        </p>
+      </details>
+
+      <details class="bg-white p-4 rounded-xl border border-stone-200 cursor-pointer group">
+        <summary class="font-bold text-xs sm:text-sm text-stone-800 flex justify-between items-center">
+          <span>कट केलेल्या भाज्या किती दिवस चांगल्या राहतात?</span>
+          <span class="text-emerald-600 group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+          आमच्या २०० ग्रॅमच्या सीलबंद हायजेनिक पॅकमध्ये भाज्या फ्रीजमध्ये ३ ते ४ दिवस टवटवीत आणि ताज्या राहतात. मात्र जास्तीत जास्त चवीसाठी १-२ दिवसांत वापरणे उत्तम.
+        </p>
+      </details>
+
+      <details class="bg-white p-4 rounded-xl border border-stone-200 cursor-pointer group">
+        <summary class="font-bold text-xs sm:text-sm text-stone-800 flex justify-between items-center">
+          <span>कापण्याचा आकार (बारीक किंवा मोठा) ठरवता येतो का?</span>
+          <span class="text-emerald-600 group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+          होय! कार्टमध्ये ऑर्डर करताना तुम्ही 'बारीक (Fine chopped)' किंवा 'मध्यम चौकोनी (Medium diced)' पर्याय निवडू शकता किंवा 'विशेष सूचना' मध्ये लिहू शकता.
+        </p>
+      </details>
+
+      <details class="bg-white p-4 rounded-xl border border-stone-200 cursor-pointer group">
+        <summary class="font-bold text-xs sm:text-sm text-stone-800 flex justify-between items-center">
+          <span>पेमेंट कसे करायचे?</span>
+          <span class="text-emerald-600 group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+          व्हॉट्सॲपवर ऑर्डर कन्फर्म झाल्यावर तुम्ही गुगल पे (Google Pay), फोनपे (PhonePe), पेटीएम (Paytm) किंवा रोख (Cash on Delivery) द्वारे पैसे देऊ शकता.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer class="bg-stone-900 text-stone-300 pt-12 pb-8 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-stone-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🌿</span>
+            <span class="font-display font-black text-xl text-white">Sugran <span class="text-emerald-400">Katta</span></span>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            सुगरण कट्टा - घरच्या चवीसाठी, वेळेची बचत! ताजी, स्वच्छ आणि २०० ग्रॅमच्या सीलबंद पॅकेटमध्ये उपलब्ध कट केलेली भाजी.
+          </p>
+          <div class="text-xs text-amber-300 font-semibold">
+            📍 Nahre Ambegaon, Pune
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-3">महत्त्वाच्या लिंक्स</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li><a href="#catalog" class="hover:text-emerald-400 transition">सर्व भाज्यांची यादी</a></li>
+            <li><a href="#why-sugran" class="hover:text-emerald-400 transition">आमची स्वच्छता पद्धत</a></li>
+            <li><a href="#time-calculator" class="hover:text-emerald-400 transition">वेळेची बचत कॅल्क्युलेटर</a></li>
+            <li><a href="#delivery-areas" class="hover:text-emerald-400 transition">पुण्यातील सेवा क्षेत्र</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Highlights from Flyer -->
+        <div>
+          <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-3">वैशिष्ट्ये</h4>
+          <ul class="space-y-1.5 text-xs text-stone-400">
+            <li>✓ Fresh Produce Every Day</li>
+            <li>✓ स्वच्छ धुणे आणि कापले</li>
+            <li>✓ वेळेची बचत १००%</li>
+            <li>✓ सहज सोयीस व गुणवत्तेची हमी</li>
+            <li>✓ रासायनिक मुक्त भाज्या</li>
+            <li>✓ 200gm प्रत्येक पॅकेट मध्ये उपलब्ध</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Order -->
+        <div class="space-y-3">
+          <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-3">थेट संपर्क व ऑर्डर</h4>
+          <a 
+            href="https://wa.me/918669289173" 
+            target="_blank"
+            class="flex items-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs transition shadow"
+          >
+            <span class="text-base">💬</span>
+            <span>WhatsApp: 9156872582</span>
+          </a>
+          <a 
+            href="tel:+918669289173"
+            class="flex items-center gap-2 px-4 py-2.5 bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold rounded-xl text-xs transition border border-stone-700"
+          >
+            <span>📞</span>
+            <span>कॉल करा: +91 9156872582</span>
+          </a>
+          <p class="text-[11px] text-amber-400/90 italic">
+            * ऑर्डर एक दिवस आधी नोंदवावी.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom credits -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-2">
+        <p>© 2026 Sugran Katta (सुगरण कट्टा). सर्व हक्क सुरक्षित. Nahre Ambegaon, Pune.</p>
+        <p class="flex items-center gap-1">
+          <span>ताजी भाजी • निरोगी आरोग्य</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 11. CART SLIDE-OVER DRAWER -->
+  <div id="cart-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+  <div 
+    id="cart-drawer" 
+    class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-white shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out border-l border-stone-200"
+  >
+    <!-- Drawer Header -->
+    <div class="p-4 border-b border-stone-200 flex items-center justify-between bg-stone-50">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🧺</span>
+        <div>
+          <h3 class="font-extrabold text-stone-900 text-sm">तुमची भाजीची पिशवी (Veggie Basket)</h3>
+          <span class="text-[10px] text-stone-500 block">सुगरण कट्टा • नऱ्हे-आंबेगाव, पुणे</span>
+        </div>
+      </div>
+      <button 
+        id="close-cart-btn" 
+        class="w-8 h-8 rounded-full bg-stone-200 hover:bg-stone-300 text-stone-700 flex items-center justify-center font-bold text-sm transition"
+      >
+        ✕
+      </button>
+    </div>
+
+    <!-- Scrollable Items Area -->
+    <div class="flex-1 overflow-y-auto p-4 space-y-3">
+      <div id="cart-items-container" class="space-y-3"></div>
+      <div id="cart-summary-container"></div>
+    </div>
+  </div>
+
+  <!-- 12. FLOATING QUICK ACTION BUTTONS -->
+  <!-- Floating Cart Summary Bar (When items > 0) -->
+  <div 
+    id="floating-cart-btn" 
+    class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 translate-y-24 opacity-0 transition-all duration-300 w-[92%] max-w-md pointer-events-auto"
+  >
+    <button 
+      onclick="openCartDrawer()" 
+      class="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-700 text-white p-3.5 rounded-2xl shadow-2xl flex items-center justify-between border-2 border-emerald-400/30 active:scale-95 transition"
+    >
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl">
+          🧺
+        </div>
+        <div class="text-left">
+          <div class="text-xs font-bold leading-tight">
+            <span class="cart-count-badge">0</span> भाज्या निवडल्या
+          </div>
+          <div class="cart-total-badge text-sm font-extrabold text-amber-300">₹0</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5 bg-white text-emerald-800 px-3.5 py-1.5 rounded-xl text-xs font-black shadow-sm">
+        <span>ऑर्डर करा</span>
+        <span>→</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Floating WhatsApp Hotline Button -->
+  <a 
+    href="https://wa.me/918669289173?text=नमस्कार%2C%20मला%20सुगरण%20कट्टावरून%20भाज्यांबद्दल%20माहिती%20हवी%20आहे." 
+    target="_blank" 
+    class="fixed bottom-6 right-5 z-30 w-14 h-14 bg-gradient-to-tr from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:shadow-2xl transition transform hover:scale-110 active:scale-90 pulse-green"
+    title="WhatsApp वर थेट बोला"
+  >
+    <span>💬</span>
+  </a>
+
+  <!-- 13. ORIGINAL FLYER LIGHTBOX MODAL -->
+  <div id="flyer-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[92vh] overflow-hidden flex flex-col shadow-2xl">
+      <!-- Modal Header -->
+      <div class="p-3.5 bg-stone-100 border-b border-stone-200 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">📜</span>
+          <h4 class="font-extrabold text-stone-900 text-xs sm:text-sm">सुगरण कट्टा - मूळ माहिती पत्रक (Official Flyer)</h4>
+        </div>
+        <button 
+          id="close-flyer-modal" 
+          class="w-7 h-7 bg-stone-200 hover:bg-stone-300 text-stone-700 rounded-full flex items-center justify-center font-bold text-xs"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body (Image) -->
+      <div class="flex-1 overflow-y-auto p-3 bg-stone-900 flex items-center justify-center">
+        <img 
+          src="sugran-katta-flyer.jpg" 
+          alt="Sugran Katta Original Poster" 
+          class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-lg"
+        />
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-3 bg-stone-50 border-t border-stone-200 flex items-center justify-between text-xs">
+        <span class="text-stone-500">📍 Nahre Ambegaon, Pune • 📞 9156872582</span>
+        <a 
+          href="sugran-katta-flyer.jpg" 
+          download="sugran-katta-menu.jpg"
+          class="px-3 py-1.5 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 transition"
+        >
+          डाउनलोड करा
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>
